@@ -13,12 +13,15 @@ class TestYearViewViewController: UIViewController {
     let f = DateFormatter()
     
     override func viewDidLoad() {
+        calendarView.calendarDataSource  = self
+        calendarView.calendarDelegate  = self
         super.viewDidLoad()
     }
 }
 
 
 extension TestYearViewViewController: JTACYearViewDelegate, JTACYearViewDataSource {
+    // Drawing for a whole month cell
     func calendar(_ calendar: JTACYearView, cellFor item: Any, at date: Date, indexPath: IndexPath) -> JTACMonthCell {
         if item is Month {
             let cell = calendar.dequeueReusableJTAppleMonthCell(withReuseIdentifier: "kkk", for: indexPath) as! MyCell
@@ -66,7 +69,7 @@ extension TestYearViewViewController: JTACYearViewDelegate, JTACYearViewDataSour
     }
     
     
-    
+    // Drawing for individual item in a month cell.
     func calendar(_ calendar: JTACYearView, monthView: JTACCellMonthView, drawingFor rect: CGRect, with date: Date, dateOwner: DateOwner, monthIndex index: Int) {
         f.dateFormat = "d"
         let dateString = f.string(from: date)
