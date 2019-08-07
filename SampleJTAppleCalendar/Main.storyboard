@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14810.11" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="9v8-0V-uqf">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14854.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="9v8-0V-uqf">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14766.13"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14806.4"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -746,7 +746,7 @@
                                                             <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </view>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eil-Oq-XKz">
-                                                            <rect key="frame" x="62" y="71" width="42" height="21"/>
+                                                            <rect key="frame" x="62.5" y="72" width="42" height="20.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -795,10 +795,10 @@
             </objects>
             <point key="canvasLocation" x="1386" y="-444"/>
         </scene>
-        <!--Ib Calendar Data Source-->
+        <!--Test Year View View Controller-->
         <scene sceneID="wO7-mA-HMM">
             <objects>
-                <viewController id="ZZU-Fx-N6U" customClass="TestYearViewViewController" customModule="JTAppleCalendar" sceneMemberID="viewController">
+                <viewController id="ZZU-Fx-N6U" customClass="TestYearViewViewController" customModule="SampleJTAppleCalendar" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="E2D-gB-4ry"/>
                         <viewControllerLayoutGuide type="bottom" id="cEM-w5-hoy"/>
@@ -820,7 +820,7 @@
                                     <inset key="sectionInset" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="kkk" id="C03-vA-CDE" customClass="MyCell" customModule="JTAppleCalendar">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="kkk" id="C03-vA-CDE" customClass="MyCell" customModule="SampleJTAppleCalendar" customModuleProvider="target">
                                         <rect key="frame" x="10" y="0.0" width="156" height="135"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -852,7 +852,7 @@
                                             <outlet property="monthView" destination="dkg-wL-Ol1" id="ooh-80-6zr"/>
                                         </connections>
                                     </collectionViewCell>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="zzz" id="wk8-2U-Cj3" customClass="YearHeaderCell" customModule="JTAppleCalendar">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="zzz" id="wk8-2U-Cj3" customClass="YearHeaderCell" customModule="SampleJTAppleCalendar" customModuleProvider="target">
                                         <rect key="frame" x="176" y="50.5" width="199" height="34"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -860,7 +860,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" misplaced="YES" text="2019" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GWG-e8-t2Q">
-                                                    <rect key="frame" x="0.0" y="0.0" width="132" height="21"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="59" height="21"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                                     <color key="textColor" red="1" green="0.30872617429999999" blue="0.17401843089999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -873,13 +873,13 @@
                                         </constraints>
                                         <size key="customSize" width="199" height="34"/>
                                         <connections>
-                                            <outlet property="yearLabel" destination="GWG-e8-t2Q" id="GC0-Gn-Tmy"/>
+                                            <outlet property="yearLabel" destination="GWG-e8-t2Q" id="UaX-ez-n4E"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
                                 <connections>
-                                    <outlet property="ibCalendarDataSource" destination="ZZU-Fx-N6U" id="9BH-sa-ebt"/>
-                                    <outlet property="ibCalendarDelegate" destination="ZZU-Fx-N6U" id="EAg-5Z-e3D"/>
+                                    <outlet property="ibCalendarDataSource" destination="pke-tV-doL" id="whE-i4-CES"/>
+                                    <outlet property="ibCalendarDelegate" destination="pke-tV-doL" id="Ah0-gC-2nn"/>
                                 </connections>
                             </collectionView>
                         </subviews>
@@ -891,12 +891,12 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="calendarView" destination="Bh9-Ea-ItT" id="Zax-kR-DU3"/>
+                        <outlet property="calendarView" destination="Bh9-Ea-ItT" id="hyM-gA-pgb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vQa-iq-XYe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2256.8000000000002" y="-477.21139430284859"/>
+            <point key="canvasLocation" x="2256.521739130435" y="-477.45535714285711"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Pw0-md-6kX">
@@ -976,7 +976,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kyX-nO-Lf1">
-                                <rect key="frame" x="0.0" y="85" width="414" height="271"/>
+                                <rect key="frame" x="0.0" y="129" width="414" height="271"/>
                                 <subviews>
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="LAY-EA-ORQ" customClass="JTACMonthView" customModule="JTAppleCalendar">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="271"/>
@@ -1034,7 +1034,7 @@
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="TU3-e8-jQU">
-                                <rect key="frame" x="20" y="356" width="374" height="30"/>
+                                <rect key="frame" x="20" y="400" width="374" height="30"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mT9-sa-CDD">
                                         <rect key="frame" x="0.0" y="0.0" width="118" height="30"/>
@@ -1060,7 +1060,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="bqS-br-Qs5">
-                                <rect key="frame" x="0.0" y="386" width="414" height="30"/>
+                                <rect key="frame" x="0.0" y="430" width="414" height="30"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e3X-PP-Mqx">
                                         <rect key="frame" x="0.0" y="0.0" width="131.5" height="30"/>
@@ -1086,7 +1086,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Ctc-L8-eMh">
-                                <rect key="frame" x="0.0" y="64.5" width="414" height="20.5"/>
+                                <rect key="frame" x="0.0" y="108.5" width="414" height="20.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SUN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z7b-KP-qsX">
                                         <rect key="frame" x="0.0" y="0.0" width="59" height="20.5"/>
@@ -1140,13 +1140,13 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d9e-9A-w1w">
-                                <rect key="frame" x="186" y="44" width="42" height="20.5"/>
+                                <rect key="frame" x="186" y="88" width="42" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="ULx-90-n0y">
-                                <rect key="frame" x="20" y="416" width="374" height="30"/>
+                                <rect key="frame" x="20" y="460" width="374" height="30"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="he5-OD-oBh">
                                         <rect key="frame" x="0.0" y="0.0" width="124.5" height="30"/>
@@ -1172,7 +1172,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="HBe-aT-7IQ">
-                                <rect key="frame" x="20" y="446" width="394" height="30"/>
+                                <rect key="frame" x="20" y="490" width="394" height="30"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hAY-Ma-dSs">
                                         <rect key="frame" x="0.0" y="0.0" width="131.5" height="30"/>
@@ -1198,7 +1198,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Hwj-Wy-zs2">
-                                <rect key="frame" x="20" y="476" width="374" height="30"/>
+                                <rect key="frame" x="20" y="520" width="374" height="30"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bJf-bb-Owh">
                                         <rect key="frame" x="0.0" y="0.0" width="124.5" height="30"/>
@@ -1271,11 +1271,11 @@
                         <viewControllerLayoutGuide type="bottom" id="9aO-Wa-gd5"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="VKx-z3-f3S">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M9X-If-dms">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <connections>
                                     <segue destination="AVg-Nb-61y" kind="embed" id="Koe-cZ-02p"/>
                                 </connections>
@@ -1293,7 +1293,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gdA-CW-1dw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1324" y="2064"/>
+            <point key="canvasLocation" x="1387" y="1922"/>
         </scene>
         <!--Item 1-->
         <scene sceneID="DlA-DD-Si6">
@@ -1304,7 +1304,7 @@
                         <viewControllerLayoutGuide type="bottom" id="qYy-dV-JLY"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="hDs-co-hYo">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -1404,6 +1404,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Koe-cZ-02p"/>
+        <segue reference="h9Y-WS-r0J"/>
     </inferredMetricsTieBreakers>
 </document>
