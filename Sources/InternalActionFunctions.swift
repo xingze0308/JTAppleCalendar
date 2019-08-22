@@ -56,10 +56,7 @@ extension JTAppleCalendarView {
         minimumLineSpacing = newLayout.minimumLineSpacing
         minimumInteritemSpacing = newLayout.minimumInteritemSpacing
         
-        
-        if #available(iOS 9.0, *) {
-            transform.a = semanticContentAttribute == .forceRightToLeft ? -1 : 1
-        }
+        transform.a = semanticContentAttribute == .forceRightToLeft ? -1 : 1
         
         super.dataSource = self
         super.delegate = self
