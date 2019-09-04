@@ -68,12 +68,8 @@ open class JTACMonthView: UICollectionView {
     open var allowsRangedSelection: Bool = false {
         didSet { allowsMultipleSelection = true }
     }
-
-    public enum RangeSelectionMode {
-      case segmentedRange, continuousRange
-    }
   
-    open var rangeSelectionMode: RangeSelectionMode = .segmentedRange
+    open var rangeSelectionMode: RangeSelectionMode = .segmented
   
     /// The object that acts as the delegate of the calendar view.
     weak open var calendarDelegate: JTACMonthViewDelegate? {
