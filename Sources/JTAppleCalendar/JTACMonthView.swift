@@ -65,9 +65,7 @@ open class JTACMonthView: UICollectionView {
     /// just selected.
     @available(*, unavailable, renamed: "allowsRangedSelection")
     open var isRangeSelectionUsed: Bool = false
-    open var allowsRangedSelection: Bool = false {
-        didSet { allowsMultipleSelection = true }
-    }
+    open var allowsRangedSelection: Bool = false
   
     open var rangeSelectionMode: RangeSelectionMode = .segmented
   
