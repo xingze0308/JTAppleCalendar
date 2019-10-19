@@ -66,6 +66,7 @@ class JTACMonthLayout: UICollectionViewLayout, JTACMonthLayoutProtocol {
     var xCellOffset: CGFloat = 0
     var yCellOffset: CGFloat = 0
     var endSeparator: CGFloat = 0
+    override var flipsHorizontallyInOppositeLayoutDirection: Bool { return true }
     
     var delayedExecutionClosure: [(() -> Void)] = []
     func executeDelayedTasks() {
