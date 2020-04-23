@@ -28,7 +28,18 @@
 		6B4E46A522C2151E00D0F78E /* WhiteSectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B4E469F22C2151E00D0F78E /* WhiteSectionHeaderView.xib */; };
 		6B4E46E622C2174C00D0F78E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B4E46E522C2174C00D0F78E /* Main.storyboard */; };
 		6BBDD4DF22E3E7FF001BE4E0 /* JTAppleCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = 6BBDD4DE22E3E7FF001BE4E0 /* JTAppleCalendar */; };
+		6BE6BE5C23807BA600148D6E /* SampleJTAppleCalendarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE6BE5B23807BA600148D6E /* SampleJTAppleCalendarUITests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6BE6BE5E23807BA600148D6E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6B4E464822C202DD00D0F78E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6B4E464F22C202DD00D0F78E;
+			remoteInfo = SampleJTAppleCalendar;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		6B4E465022C202DD00D0F78E /* SampleJTAppleCalendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleJTAppleCalendar.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -54,6 +65,9 @@
 		6B4E469E22C2151E00D0F78E /* PinkSectionHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinkSectionHeaderView.swift; sourceTree = "<group>"; };
 		6B4E469F22C2151E00D0F78E /* WhiteSectionHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WhiteSectionHeaderView.xib; sourceTree = "<group>"; };
 		6B4E46E522C2174C00D0F78E /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		6BE6BE5923807BA600148D6E /* SampleJTAppleCalendarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleJTAppleCalendarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BE6BE5B23807BA600148D6E /* SampleJTAppleCalendarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleJTAppleCalendarUITests.swift; sourceTree = "<group>"; };
+		6BE6BE5D23807BA600148D6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +79,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6BE6BE5623807BA600148D6E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -73,6 +94,7 @@
 			children = (
 				6B4E466722C202FB00D0F78E /* JTAppleCalendar */,
 				6B4E465222C202DD00D0F78E /* SampleJTAppleCalendar */,
+				6BE6BE5A23807BA600148D6E /* SampleJTAppleCalendarUITests */,
 				6B4E465122C202DD00D0F78E /* Products */,
 				6B4E466822C2032B00D0F78E /* Frameworks */,
 			);
@@ -82,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				6B4E465022C202DD00D0F78E /* SampleJTAppleCalendar.app */,
+				6BE6BE5923807BA600148D6E /* SampleJTAppleCalendarUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -177,6 +200,15 @@
 			path = HeaderAsXibs;
 			sourceTree = "<group>";
 		};
+		6BE6BE5A23807BA600148D6E /* SampleJTAppleCalendarUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6BE6BE5B23807BA600148D6E /* SampleJTAppleCalendarUITests.swift */,
+				6BE6BE5D23807BA600148D6E /* Info.plist */,
+			);
+			path = SampleJTAppleCalendarUITests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -200,18 +232,40 @@
 			productReference = 6B4E465022C202DD00D0F78E /* SampleJTAppleCalendar.app */;
 			productType = "com.apple.product-type.application";
 		};
+		6BE6BE5823807BA600148D6E /* SampleJTAppleCalendarUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6BE6BE6223807BA600148D6E /* Build configuration list for PBXNativeTarget "SampleJTAppleCalendarUITests" */;
+			buildPhases = (
+				6BE6BE5523807BA600148D6E /* Sources */,
+				6BE6BE5623807BA600148D6E /* Frameworks */,
+				6BE6BE5723807BA600148D6E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6BE6BE5F23807BA600148D6E /* PBXTargetDependency */,
+			);
+			name = SampleJTAppleCalendarUITests;
+			productName = SampleJTAppleCalendarUITests;
+			productReference = 6BE6BE5923807BA600148D6E /* SampleJTAppleCalendarUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		6B4E464822C202DD00D0F78E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1100;
+				LastSwiftUpdateCheck = 1110;
 				LastUpgradeCheck = 1100;
 				ORGANIZATIONNAME = OsTech;
 				TargetAttributes = {
 					6B4E464F22C202DD00D0F78E = {
 						CreatedOnToolsVersion = 11.0;
+					};
+					6BE6BE5823807BA600148D6E = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = 6B4E464F22C202DD00D0F78E;
 					};
 				};
 			};
@@ -232,6 +286,7 @@
 			projectRoot = "";
 			targets = (
 				6B4E464F22C202DD00D0F78E /* SampleJTAppleCalendar */,
+				6BE6BE5823807BA600148D6E /* SampleJTAppleCalendarUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -247,6 +302,13 @@
 				6B4E466022C202DF00D0F78E /* LaunchScreen.storyboard in Resources */,
 				6B4E465D22C202DF00D0F78E /* Assets.xcassets in Resources */,
 				6B4E46A322C2151E00D0F78E /* PinkSectionHeaderView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BE6BE5723807BA600148D6E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,7 +336,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6BE6BE5523807BA600148D6E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BE6BE5C23807BA600148D6E /* SampleJTAppleCalendarUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6BE6BE5F23807BA600148D6E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6B4E464F22C202DD00D0F78E /* SampleJTAppleCalendar */;
+			targetProxy = 6BE6BE5E23807BA600148D6E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		6B4E465E22C202DF00D0F78E /* LaunchScreen.storyboard */ = {
@@ -438,6 +516,46 @@
 			};
 			name = Release;
 		};
+		6BE6BE6023807BA600148D6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WE23L742P8;
+				INFOPLIST_FILE = SampleJTAppleCalendarUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = NoneInc.SampleJTAppleCalendarUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SampleJTAppleCalendar;
+			};
+			name = Debug;
+		};
+		6BE6BE6123807BA600148D6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WE23L742P8;
+				INFOPLIST_FILE = SampleJTAppleCalendarUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = NoneInc.SampleJTAppleCalendarUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SampleJTAppleCalendar;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -455,6 +573,15 @@
 			buildConfigurations = (
 				6B4E466522C202DF00D0F78E /* Debug */,
 				6B4E466622C202DF00D0F78E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6BE6BE6223807BA600148D6E /* Build configuration list for PBXNativeTarget "SampleJTAppleCalendarUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6BE6BE6023807BA600148D6E /* Debug */,
+				6BE6BE6123807BA600148D6E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

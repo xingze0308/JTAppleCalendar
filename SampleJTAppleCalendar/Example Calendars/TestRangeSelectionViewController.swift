@@ -47,7 +47,7 @@ class TestRangeSelectionViewController: UIViewController {
     
     func handleCellSelection(cell: TestRangeSelectionViewControllerCell, cellState: CellState) {
         cell.selectedView.isHidden = !cellState.isSelected
-        if #available(iOS 11.0, *) {
+        
             switch cellState.selectedPosition() {
             case .left:
                 cell.selectedView.layer.cornerRadius = 20
@@ -64,7 +64,7 @@ class TestRangeSelectionViewController: UIViewController {
             default: break
             }
         
-        }
+        
     
     
     }
@@ -87,11 +87,11 @@ extension TestRangeSelectionViewController: JTACMonthViewDelegate, JTACMonthView
         setupMonthLabel(date: visibleDates.monthDates.first!.date)
     }
     
-    func calendar(_ calendar: JTACMonthView, didSelectDate date: Date, cell: JTACDayCell?, cellState: CellState) {
+    func calendar(_ calendar: JTACMonthView, didSelectDate date: Date, cell: JTACDayCell?, cellState: CellState, indexPath: IndexPath) {
         handleConfiguration(cell: cell, cellState: cellState)
     }
     
-    func calendar(_ calendar: JTACMonthView, didDeselectDate date: Date, cell: JTACDayCell?, cellState: CellState) {
+    func calendar(_ calendar: JTACMonthView, didDeselectDate date: Date, cell: JTACDayCell?, cellState: CellState, indexPath: IndexPath) {
         handleConfiguration(cell: cell, cellState: cellState)
     }
     

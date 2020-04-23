@@ -28,6 +28,16 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "6BE6BE5823807BA600148D6E"
+               BuildableName = "SampleJTAppleCalendarUITests.xctest"
+               BlueprintName = "SampleJTAppleCalendarUITests"
+               ReferencedContainer = "container:SampleJTAppleCalendar.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction

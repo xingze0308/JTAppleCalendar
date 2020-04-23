@@ -11,6 +11,7 @@ import JTAppleCalendar
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var customColumn: UITextField!
     @IBOutlet weak var calendarView: JTACMonthView!
     @IBOutlet weak var monthLabel: UILabel!
     @IBOutlet weak var weekViewStack: UIStackView!
@@ -33,7 +34,8 @@ class ViewController: UIViewController {
     var insideHeaderVisibilityIsOn = false
     
     var currentScrollModeIndex = 0
-    let allScrollModes: [ScrollingMode] = [
+    var hhh: CGFloat?
+    var allScrollModes: [ScrollingMode] = [
         .none,
         .nonStopTo(customInterval: 374, withResistance: 0.5),
         .nonStopToCell(withResistance: 0.5),
@@ -200,7 +202,8 @@ class ViewController: UIViewController {
                               withReuseIdentifier: "PinkSectionHeaderView")
         
 //        calendarView.allowsMultipleSelection = true
-//        calendarView.allowsMultipleSelection = true
+        calendarView.scrollToDate(Date())
+        calendarView.selectDates([Date()])
         
         self.calendarView.visibleDates {[unowned self] (visibleDates: DateSegmentInfo) in
             self.setupViewsOfCalendar(from: visibleDates)
@@ -285,24 +288,24 @@ class ViewController: UIViewController {
     func handleCellConfiguration(cell: JTACDayCell?, cellState: CellState) {
         handleCellSelection(view: cell, cellState: cellState)
         handleCellTextColor(view: cell, cellState: cellState)
-        prePostVisibility?(cellState, cell as? CellView)
+//        prePostVisibility?(cellState, cell as? CellView)
     }
+    
     
     // Function to handle the text color of the calendar
     func handleCellTextColor(view: JTACDayCell?, cellState: CellState) {
         guard let myCustomCell = view as? CellView  else {
             return
         }
-        
+                
         if cellState.isSelected {
             myCustomCell.dayLabel.textColor = .white
         } else {
-            if cellState.dateBelongsTo == .thisMonth {
-                myCustomCell.dayLabel.textColor = .black
-            } else {
-                myCustomCell.dayLabel.textColor = .gray
-            }
+            myCustomCell.dayLabel.textColor = .black
         }
+        
+        myCustomCell.isHidden = cellState.dateBelongsTo != .thisMonth
+        
     }
     
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
@@ -369,7 +372,7 @@ extension ViewController: JTACMonthViewDelegate, JTACMonthViewDataSource {
         
         
         let startDate = formatter.date(from: "2018 01 01")!
-        let endDate = formatter.date(from: "2018 12 01")!
+        let endDate = formatter.date(from: "2020 12 01")!
         
         let parameters = ConfigurationParameters(startDate: startDate,
                                                  endDate: endDate,
@@ -377,7 +380,7 @@ extension ViewController: JTACMonthViewDelegate, JTACMonthViewDataSource {
                                                  calendar: testCalendar,
                                                  generateInDates: generateInDates,
                                                  generateOutDates: generateOutDates,
-                                                 firstDayOfWeek: .monday,
+                                                 firstDayOfWeek: .sunday,
                                                  hasStrictBoundaries: hasStrictBoundaries)
         return parameters
     }
