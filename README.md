@@ -33,7 +33,19 @@ ___
 
 ## How do I use this library? 
 ### >> [Read the wiki](https://github.com/patchthecode/JTAppleCalendar/wiki/Tutorials) for Tutorials and example code to download. Or visit [PatchTheCode.com](https://patchthecode.com).
+
 ___
+
+## Sponsors
+
+Support this project by becoming a sponsor. Your logo will show up here with a link to your website.
+Want to become a sponsor? Send an email to patchthecode@gmail.com
+
+![Scheduling API](https://user-images.githubusercontent.com/9488406/125080407-0dd25780-e0c5-11eb-9f70-ef958968674a.png)
+This project is sponsored by **Spurwing**, where their API Makes Adding Scheduling Quick, Reliable and Scalable. Use Spurwing to build and integrate Scheduling, Booking & Calendar features in your project. Read more about Spurwing's [**Scheduling API**](https://www.spurwing.io/).
+
+<a href="https://opencollective.com/JTAppleCalendar/sponsor/0/website" target="_blank"><img src="https://opencollective.com/JTAppleCalendar/sponsor/0/avatar.svg"></a>
+<a href="https://opencollective.com/JTAppleCalendar/sponsor/1/website" target="_blank"><img src="https://opencollective.com/JTAppleCalendar/sponsor/1/avatar.svg"></a>
 
 ## Contributors
 
@@ -48,20 +60,6 @@ Thank you to all our backers! 🙏 [[Become a backer](https://opencollective.com
 <a href="https://opencollective.com/JTAppleCalendar#backers" target="_blank"><img src="https://opencollective.com/JTAppleCalendar/backers.svg?width=890"></a>
 
 
-## Sponsors
-
-Support this project by becoming a sponsor. Your logo will show up here with a link to your website. [[Become a sponsor](https://opencollective.com/JTAppleCalendar#sponsor)]
-
-<a href="https://opencollective.com/JTAppleCalendar/sponsor/0/website" target="_blank"><img src="https://opencollective.com/JTAppleCalendar/sponsor/0/avatar.svg"></a>
-<a href="https://opencollective.com/JTAppleCalendar/sponsor/1/website" target="_blank"><img src="https://opencollective.com/JTAppleCalendar/sponsor/1/avatar.svg"></a>
-<a href="https://opencollective.com/JTAppleCalendar/sponsor/2/website" target="_blank"><img src="https://opencollective.com/JTAppleCalendar/sponsor/2/avatar.svg"></a>
-<a href="https://opencollective.com/JTAppleCalendar/sponsor/3/website" target="_blank"><img src="https://opencollective.com/JTAppleCalendar/sponsor/3/avatar.svg"></a>
-<a href="https://opencollective.com/JTAppleCalendar/sponsor/4/website" target="_blank"><img src="https://opencollective.com/JTAppleCalendar/sponsor/4/avatar.svg"></a>
-<a href="https://opencollective.com/JTAppleCalendar/sponsor/5/website" target="_blank"><img src="https://opencollective.com/JTAppleCalendar/sponsor/5/avatar.svg"></a>
-<a href="https://opencollective.com/JTAppleCalendar/sponsor/6/website" target="_blank"><img src="https://opencollective.com/JTAppleCalendar/sponsor/6/avatar.svg"></a>
-<a href="https://opencollective.com/JTAppleCalendar/sponsor/7/website" target="_blank"><img src="https://opencollective.com/JTAppleCalendar/sponsor/7/avatar.svg"></a>
-<a href="https://opencollective.com/JTAppleCalendar/sponsor/8/website" target="_blank"><img src="https://opencollective.com/JTAppleCalendar/sponsor/8/avatar.svg"></a>
-<a href="https://opencollective.com/JTAppleCalendar/sponsor/9/website" target="_blank"><img src="https://opencollective.com/JTAppleCalendar/sponsor/9/avatar.svg"></a>
 
 
 
