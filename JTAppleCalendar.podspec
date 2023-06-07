@@ -14,8 +14,8 @@ A highly configurable Apple calendar control. Contains features like boundary da
 
   s.swift_version    = '5'
 
-  s.ios.deployment_target = '10.0'
-  s.tvos.deployment_target = '10.0'
+  s.ios.deployment_target = '11.0'
+  s.tvos.deployment_target = '11.0'
 
   s.source_files = 'Sources/JTAppleCalendar/*.swift'
 end
