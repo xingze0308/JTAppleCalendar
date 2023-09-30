@@ -215,7 +215,13 @@ extension JTACMonthView {
     /// - Parameter completionHandler: This closure will run after
     ///                                the reload is complete
     public func reloadData(withAnchor date: Date? = nil, completionHandler: (() -> Void)? = nil) {
-        if isReloadDataInProgress { return }
+        if isReloadDataInProgress {
+            calendarViewLayout.delayedExecutionClosure.append {[weak self] in
+                guard let _ = self else { return }
+                completionHandler?()
+            }
+            return
+        }
         if isScrollInProgress {
             scrollDelayedExecutionClosure.append {[unowned self] in
                 self.reloadData(completionHandler: completionHandler)
