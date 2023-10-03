@@ -137,7 +137,7 @@ extension JTACMonthView {
             validConfig = valid
         } else {
             assert(false, "Using default parameters. Your config should not have been nil here. In production, your dates will be an incorrect default date")
-            validConfig = ConfigurationParameters(startDate: Date(), endDate: Date())
+            validConfig = ConfigurationParameters(startDate: Date(), endDate: Date().addingTimeInterval(1))
         }
         
         let comparison = validConfig.calendar.compare(validConfig.startDate, to: validConfig.endDate, toGranularity: .nanosecond)
