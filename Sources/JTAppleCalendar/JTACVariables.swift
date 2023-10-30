@@ -51,19 +51,19 @@ extension JTACMonthView {
         }
     }
     
-    @available(*, unavailable)
-    /// Will not be used by subclasses
-    open override var delegate: UICollectionViewDelegate? {
-        get { return super.delegate }
-        set { /* Do nothing */ }
-    }
-    
-    @available(*, unavailable)
-    /// Will not be used by subclasses
-    open override var dataSource: UICollectionViewDataSource? {
-        get { return super.dataSource }
-        set {/* Do nothing */ }
-    }
+//    @available(*, unavailable)
+//    /// Will not be used by subclasses
+//    open override var delegate: UICollectionViewDelegate? {
+//        get { return super.delegate }
+//        set { /* Do nothing */ }
+//    }
+//    
+//    @available(*, unavailable)
+//    /// Will not be used by subclasses
+//    open override var dataSource: UICollectionViewDataSource? {
+//        get { return super.dataSource }
+//        set {/* Do nothing */ }
+//    }
     
     /// Returns all selected dates
     public var selectedDates: [Date] {

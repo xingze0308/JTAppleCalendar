@@ -60,8 +60,8 @@ extension JTACMonthView {
 
         transform.a = semanticContentAttribute == .forceRightToLeft ? -1 : 1
         
-        super.dataSource = self
-        super.delegate = self
+        self.dataSource = self
+        self.delegate = self
         decelerationRate = .fast
         
         #if os(iOS)
