@@ -30,6 +30,7 @@ class JTACMonthLayout: UICollectionViewLayout, JTACMonthLayoutProtocol {
     
     var allowsDateCellStretching = true
     var firstContentOffsetWasSet = false
+    var cellHeight : CGFloat = 0
     
     var lastSetCollectionViewSize: CGRect = .zero
     
@@ -67,7 +68,6 @@ class JTACMonthLayout: UICollectionViewLayout, JTACMonthLayoutProtocol {
     var yCellOffset: CGFloat = 0
     var endSeparator: CGFloat = 0
     override var flipsHorizontallyInOppositeLayoutDirection: Bool { return true }
-    
     var delayedExecutionClosure: [(() -> Void)] = []
     func executeDelayedTasks() {
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.01) {
@@ -94,7 +94,7 @@ class JTACMonthLayout: UICollectionViewLayout, JTACMonthLayoutProtocol {
         // Default Item height and width
         var height: CGFloat = collectionView!.bounds.size.height / CGFloat(cachedConfiguration.numberOfRows)
         var width: CGFloat = collectionView!.bounds.size.width / CGFloat(maxNumberOfDaysInWeek)
-        
+     
         if shouldUseUserItemSizeInsteadOfDefault { // If delegate item size was set
             if scrollDirection == .horizontal {
                 width = delegate.cellSize
@@ -103,7 +103,7 @@ class JTACMonthLayout: UICollectionViewLayout, JTACMonthLayoutProtocol {
             }
         }
         
-        return CGSize(width: width, height: height)
+        return CGSize(width: width, height: cachedConfiguration.cellHeight > 0 ? cachedConfiguration.cellHeight:height)
     }
     
     open override func register(_ nib: UINib?, forDecorationViewOfKind elementKind: String) {
@@ -202,6 +202,9 @@ class JTACMonthLayout: UICollectionViewLayout, JTACMonthLayoutProtocol {
     /// Returns the width and height of the collection view’s contents.
     /// The width and height of the collection view’s contents.
     open override var collectionViewContentSize: CGSize {
+        if let cachedConfiguration = delegate._cachedConfiguration{
+            contentHeight =  cachedConfiguration.cellHeight > 0 ? collectionView!.bounds.size.height:contentHeight
+        }
         return CGSize(width: contentWidth, height: contentHeight)
     }
     override func invalidateLayout() {
@@ -460,9 +463,13 @@ class JTACMonthLayout: UICollectionViewLayout, JTACMonthLayoutProtocol {
                 numberOfRowsForSection = maxNumberOfRowsPerMonth
             }
             height      = (collectionView!.frame.height - headerHeight - sectionInset.top - sectionInset.bottom) / CGFloat(numberOfRowsForSection)
+            if let cachedConfiguration = delegate._cachedConfiguration{
+                height =  cachedConfiguration.cellHeight > 0 ? cachedConfiguration.cellHeight:height
+            }
             size.height = height > 0 ? height : 0
             currentCell = (section: section, width: size.width, height: size.height)
         }
+            
         return size
     }
     

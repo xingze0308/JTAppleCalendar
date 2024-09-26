@@ -82,11 +82,12 @@ public struct ConfigurationParameters {
     var generateOutDates: OutDateCellGeneration
     /// Sets the first day of week
     var firstDayOfWeek: DaysOfWeek
-    /// Determine if dates of a month should stay in its section 
+    /// Determine if dates of a month should stay in its section
     /// or if it can flow into another months section. This value is ignored
     /// if your calendar has registered headers
     var hasStrictBoundaries: Bool
-    
+    /// cell-fixed-heigth
+    var cellHeight: CGFloat
     /// init-function
     public init(startDate: Date,
                 endDate: Date,
@@ -95,10 +96,12 @@ public struct ConfigurationParameters {
                 generateInDates: InDateCellGeneration = .forAllMonths,
                 generateOutDates: OutDateCellGeneration = .tillEndOfGrid,
                 firstDayOfWeek: DaysOfWeek? = nil,
-                hasStrictBoundaries: Bool? = nil) {
+                hasStrictBoundaries: Bool? = nil,
+                cellHeight: CGFloat? = nil
+    ) {
         self.startDate = startDate
         self.endDate = endDate
-
+        self.cellHeight = cellHeight ?? 0
         if numberOfRows > 0 && numberOfRows < 7 {
             self.numberOfRows = numberOfRows
         } else {
